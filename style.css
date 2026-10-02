@@ -37,7 +37,8 @@ header p{
 }
 
 #region{
-    color: rgb(77, 52, 29);
+    color: rgb(98, 62, 49);
+    background-color: rgb(189, 250, 231);
 }
 
 #region h3{
@@ -46,6 +47,18 @@ header p{
     text-align: center;
     padding: 3rem;
    
+}
+
+#desc_cabo h2{
+    width: 17%;
+}
+
+#desc_cabo{
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(98, 62, 49);
+    padding: 4rem;
+
 }
 
 .contenido_region{
@@ -64,4 +77,21 @@ header p{
 #region img{
     width: 30%;
     object-fit: cover;
+}
+
+#servicios{
+    min-height:100vh;
+    background-image:
+        linear-gradient(rgba(189, 126, 126, 0.3), rgba(189, 126, 126, 0.3)),
+        url(imagenes/CatalogoFondo.png);
+    background-size: cover;
+    background-position: center bottom;
+    
+
+}
+
+.tarjetas_servicios{
+    display: flex;
+    justify-content: space-between;
+    
 }
