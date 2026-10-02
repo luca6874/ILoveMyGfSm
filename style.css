@@ -30,10 +30,28 @@ header p{
     letter-spacing: 1cap;
 }
 
+body {
+    margin: 0;
+}
+
 #botones_inicio{
     display: flex;
     width: 65%;
     justify-content: space-between;
+}
+
+header a{
+    color:rgb(98, 62, 49);
+    text-decoration: none;
+
+    background-color: white;
+    padding: 0.5rem 3rem;
+}
+
+header a:hover {
+    background-color:rgb(98, 62, 49);
+        color: white;
+
 }
 
 #region{
@@ -49,6 +67,16 @@ header p{
    
 }
 
+header h1 {
+    font-size: 8rem;
+    font-family: "Italianno", cursive;
+}
+
+body{
+    margin:0;
+    font-family:  "Montserrat", sans-serif;
+}
+
 #desc_cabo h2{
     width: 17%;
 }
@@ -58,6 +86,7 @@ header p{
     color: rgb(255, 255, 255);
     background-color: rgb(98, 62, 49);
     padding: 4rem;
+    min-height: 100vh;
 
 }
 
@@ -92,6 +121,23 @@ header p{
 
 .tarjetas_servicios{
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
+    padding: 8rem;
     
+}
+
+.tarjeta{
+    flex: 1;
+    border: 0.1rem solid white;
+    height: 20rem;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta a{
+    color: white;
+    text-decoration: none;
 }
