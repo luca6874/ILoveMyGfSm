@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: rgb(88, 53, 53);
+    min-height:100vh;
+    
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(192, 192, 192, 0.3)),
+        url(imagenes/iniciazo.jpg);
+    
+    background-size: cover;
+    background-position: 50%;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+header h1{
+    font-size: 5rem;
+}
+
+header p{
+    text-transform: uppercase;
+    letter-spacing: 1cap;
+}
+
+#botones_inicio{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+
+#region{
+    color: rgb(77, 52, 29);
+}
+
+#region h3{
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    text-align: center;
+    padding: 3rem;
+   
+}
+
+.contenido_region{
+   
+   
+    display: flex;
+}
+
+.seccion_region{
+    width: 70%;
+    padding: 2rem;
+    
+
+}
+
+#region img{
+    width: 30%;
+    object-fit: cover;
+}
