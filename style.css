@@ -201,11 +201,34 @@ body{
 .elemento_catalogo img{
     width: 100%;
     object-fit: cover;
-    height: 15rem;
+    height: 12rem;
 
 }
 
 .elemento_catalogo a{
     margin-top: auto;
     
+}
+
+.elemento_catalogo p {
+    margin: 0.3rem 0;
+}
+
+.seccion_catalogo {
+    display: none;
+    background-color: rgb(233, 222, 212);
+    color: rgb(98, 62, 49);
+
+    padding-top: 3rem;
+}
+
+
+.seccion_catalogo > h2 {
+    text-align: center;
+    margin: 0 0 3rem 0;
+}
+
+.seccion_catalogo.activa {
+    display: block;
+
 }
