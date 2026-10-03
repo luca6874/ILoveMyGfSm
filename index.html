@@ -13,30 +13,30 @@
     <title>Catálogo de servicios | Los Cabos</title>
 </head>
 <body>
-   <header>
+    <div class="ventana_principal" id="inicio">
+        <div class="carril_principal">
+            <header>
 
-        <p>Bienvenido a</p>
-        <h1>Catálogo de servicios</h1>
-        <h2>salones y catering en san josé del cabo</h2>
-        
-        <div id="botones_inicio">
-            <a href="#region" id="btn_region">Región</a>
-            <a href="#desc_cabo" id="btn_eventos">Eventos</a>
-            <a href="#servicios" id="btn_catalogos">Catálogo</a> 
-        </div>
+                <p>Bienvenido a</p>
+                <h1>Catálogo de servicios</h1>
+                <h2>salones y catering en san josé del cabo</h2>
+                
+                <div id="botones_inicio">
+                    <a href="#region" id="btn_region">Región</a>
+                    <a href="#desc_cabo" id="btn_eventos">Eventos</a>
+                    <a href="#servicios" id="btn_servicios">Catálogo</a> 
+                </div>
 
-        <span class="marca um">UM</span>
-        <span class="marca erika">ERIKA</span>
+                <span class="marca um">UM</span>
+                <span class="marca erika">ERIKA</span>
 
-    </header>
+            </header>
    
-    <main>
+    
 
-        <div class="ventana_principal">
-            <div class="carril_principal">
 
                 <section id="region">
-                    <p>iconoFlecha</p>
+                    <button class="flecha_regresar" id="volver_region">←</button>
                     <div class="contenido_region">
                         <img src="imagenes/BienvenidoA.png" alt="imagen del arco de san lucas desde arriba y en perspectiva">
                         <div class="seccion_region">
@@ -58,7 +58,7 @@
                 </section>
 
                 <section id="desc_cabo">
-                    <p>iconoFlecha</p>
+                    <button class="flecha_regresar" id="volver_eventos">←</button>
 
                     <h2>En Los Cabos, cada celebración tiene su propio carácter...</h2>
                     <p> La diferencia está en el propósito, el ambiente y quiénes comparten el momento.</p>
@@ -67,19 +67,22 @@
                 </section>
 
                 <section id="servicios">
+
+                    <button class="flecha_regresar" id="volver_servicios">←</button>
+
                     <div class="tarjetas_servicios">
                         <div class="tarjeta">
-                            <a href="">
+                            <a href="" id="ir_hoteles">
                                 Hoteles con salones
                             </a>
                         </div>
                         <div class="tarjeta">
-                            <a href="">
+                            <a href="" id="ir_salones">
                                 Salones
                             </a>
                         </div>
                         <div class="tarjeta">
-                            <a href="">
+                            <a href="" id="ir_catering">
                                 Catering
                             </a>
                         </div>
@@ -89,6 +92,8 @@
                 </section>
             </div>
         </div>
+
+    <main id="catalogo">
 
         <div class="barra_catalogo">
             <a href="" id="btn_inicio">Inicio</a>

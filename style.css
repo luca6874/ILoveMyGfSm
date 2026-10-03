@@ -89,6 +89,9 @@ header h2{
 body{
     margin:0;
     font-family:  "Montserrat", sans-serif;
+
+    height: 100vh;
+    overflow: hidden;
 }
 
 #desc_cabo h2{
@@ -264,13 +267,20 @@ body{
 
 .carril_principal {
     display: flex;
+    width: 100%;
     transition: transform 0.5s ease;
 }
 
+.carril_principal > header,
 .carril_principal > section {
     width: 100%;
     min-width: 100%;
     flex-shrink: 0;
+}
+
+#catalogo {
+    height: 100vh;
+    overflow-y: auto;
 }
 
 /*.seccion_catalogo.activa {
