@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 header{
     background-color: rgb(88, 53, 53);
@@ -21,18 +24,13 @@ header{
     color: white;
 }
 
-header h1{
-    font-size: 5rem;
-}
 
 header p{
     text-transform: uppercase;
     letter-spacing: 1cap;
 }
 
-body {
-    margin: 0;
-}
+
 
 #botones_inicio{
     display: flex;
@@ -140,4 +138,74 @@ body{
 .tarjeta a{
     color: white;
     text-decoration: none;
+}
+
+.tarjeta:hover {
+    background-color:rgb(98, 62, 49);
+    color: white;
+
+}
+
+.seccion_catalogo {
+
+    background-color:rgb(233, 222, 212);
+    color: rgb(98, 62, 49);
+}
+
+.barra_catalogo{
+    background-color: rgb(187, 224, 225);
+    display: flex;
+    gap: 10rem;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+
+.barra_catalogo a{
+    text-decoration: none;
+    color: rgb(98, 62, 49);
+
+
+}
+
+.seccion_catalogo > h2{
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.contenedor_catalogo {
+    display: flex;
+    gap: 2rem;
+    padding: 3rem;
+
+    flex-wrap: wrap;
+}
+
+.elemento_catalogo {
+    flex: 1;
+    flex-basis: 30%;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+
+.elemento_catalogo img{
+    width: 100%;
+    object-fit: cover;
+    height: 15rem;
+
+}
+
+.elemento_catalogo a{
+    margin-top: auto;
+    
 }
