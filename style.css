@@ -310,3 +310,93 @@ body{
 #servicios {
     position: relative;
 }
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    header p {
+        letter-spacing: 0.5rem;
+        text-align: center;
+    }
+
+    header h2 {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+    .contenido_region {
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+
+    #region img {
+        width: 80%;
+    }
+
+    .seccion_region {
+        width: 90%;
+    }
+
+    #botones_inicio {
+    width: 90%;
+    gap: 0.5rem;
+    }
+
+    header a {
+        flex: 1;
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    #region h3 {
+        font-size: 0.8rem;
+        letter-spacing: 0.2em;
+        padding: 1.5rem;
+    }
+
+    #desc_cabo {
+    padding: 3rem 2rem;
+    }
+
+    #desc_cabo h2 {
+        width: 90%;
+        font-size: 2.5rem;
+    }
+
+    .tarjetas_servicios {
+        flex-direction: column;
+        padding: 4rem 2rem 2rem;
+        gap: 1rem;
+    }
+
+    .tarjeta {
+        flex: none;
+        height: 10rem;
+    }
+
+    .elemento_catalogo {
+        flex-basis: 100%;
+    }
+
+    .contenedor_catalogo {
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+
+    .barra_catalogo {
+        gap: 0;
+        padding: 1rem 0.5rem;
+    }
+
+    .barra_catalogo a {
+        flex: 1;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+}
