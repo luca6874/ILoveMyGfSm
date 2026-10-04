@@ -4,7 +4,6 @@ const salones = document.getElementById("salones");
 const catering = document.getElementById("catering");
 
 
-const volver_region = document.getElementById("volver_region");
 const catalogo = document.getElementById("catalogo");
 const inicio = document.getElementById("inicio");
 
@@ -12,8 +11,6 @@ const ir_hoteles = document.getElementById("ir_hoteles");
 const ir_salones = document.getElementById("ir_salones");
 const ir_catering = document.getElementById("ir_catering");
 
-const volver_eventos = document.getElementById("volver_eventos");
-const volver_servicios = document.getElementById("volver_servicios");
 
 const carril = document.querySelector(".carril_catalogo");
 const carril_principal = document.querySelector(".carril_principal");
@@ -69,18 +66,18 @@ btn_servicios.addEventListener("click", function(event) {
     cambiarPrincipal(-300);
 });
 
-volver_region.addEventListener("click", function() {
-    cambiarPrincipal(0);
+
+
+const flechas_regresar = document.querySelectorAll(".flecha_regresar");
+
+flechas_regresar.forEach(function(flecha) {
+
+    flecha.addEventListener("click", function() {
+        cambiarPrincipal(0);
+    });
+
 });
 
-volver_eventos.addEventListener("click", function() {
-    cambiarPrincipal(0);
-});
-
-volver_servicios.addEventListener("click", function() {
-    cambiarPrincipal(0);
-});
-        
 
 btn_inicio.addEventListener("click", function(event) {
     event.preventDefault();

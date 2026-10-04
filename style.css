@@ -193,9 +193,9 @@ body{
 
 }
 
-.seccion_catalogo > h2{
+.seccion_catalogo > h2 {
     text-align: center;
-    margin: 3rem 0;
+    margin: 0 0 3rem 0;
 }
 
 .contenedor_catalogo {
@@ -245,11 +245,6 @@ body{
 }
 
 
-
-.seccion_catalogo > h2 {
-    text-align: center;
-    margin: 0 0 3rem 0;
-}
 
 .ventana_catalogo {
     overflow: hidden;
