@@ -394,4 +394,9 @@ body{
         text-align: center;
         font-size: 0.75rem;
     }
+
+    .carril_principal > section {
+        height: 100vh;
+        overflow-y: auto;
+    }
 }
