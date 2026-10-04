@@ -95,7 +95,9 @@ body{
 }
 
 #desc_cabo h2{
-    width: 17%;
+    width: 40%;
+    font-size: 3rem;
+    line-height: 0.95;
 }
 
 #desc_cabo{
@@ -109,8 +111,10 @@ body{
 
 .contenido_region{
    
-   
+    align-items: center;
     display: flex;
+
+    padding-top: 7rem;
 }
 
 .seccion_region{
@@ -165,11 +169,7 @@ body{
 
 }
 
-.seccion_catalogo {
 
-    background-color:rgb(233, 222, 212);
-    color: rgb(98, 62, 49);
-}
 
 .barra_catalogo{
     background-color: rgb(187, 224, 225);
@@ -245,6 +245,7 @@ body{
 }
 
 
+
 .seccion_catalogo > h2 {
     text-align: center;
     margin: 0 0 3rem 0;
@@ -256,7 +257,6 @@ body{
 
 .carril_catalogo {
     display: flex;
-    transform: translateX(-100%);
     transition: transform 0.5s ease;
     
 }
@@ -283,8 +283,30 @@ body{
     overflow-y: auto;
 }
 
-/*.seccion_catalogo.activa {
-    display: block;
+.flecha_regresar {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
 
-}*/
+    background: none;
+    border: none;
+    font-size: 2.8rem;
+    cursor: pointer;
+}
 
+#region .flecha_regresar {
+    color: rgb(98, 62, 49);
+}
+
+#desc_cabo .flecha_regresar {
+    color: white;
+}
+#servicios .flecha_regresar {
+    color: white;
+}
+
+#region,
+#desc_cabo,
+#servicios {
+    position: relative;
+}
