@@ -82,10 +82,9 @@ flechas_regresar.forEach(function(flecha) {
 btn_inicio.addEventListener("click", function(event) {
     event.preventDefault();
 
-    inicio.scrollIntoView();
     cambiarPrincipal(0);
+    inicio.scrollIntoView({ behavior: "smooth", block: "start" });
 });
-
 
 
 function cambiarSeccion(seccion, posicion) {
