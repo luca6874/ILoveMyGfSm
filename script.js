@@ -83,8 +83,12 @@ btn_inicio.addEventListener("click", function(event) {
     event.preventDefault();
 
     cambiarPrincipal(0);
-    inicio.scrollIntoView({ behavior: "smooth", block: "start" });
-});
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+})
 
 
 function cambiarSeccion(seccion, posicion) {
